@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>FruitFall Game</title>
+
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scaleable=0" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery-1.7.1.min.js"></script>
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+	
+	<script src="src/Box2dWeb-2.1.a.3.min.js"></script>
+
+	<script src="src/howler.min.js"></script>
+
+	<script src="src/interface.js"></script>
+	
+
+
+	<script src="src/pixi.dev.js"></script>
+	<script src="src/extend-PIXI.js"></script>
+
+
+	<script src="src/game_main.js"></script>
+
+
+</head>
+
+<html>
+	<body>
+		<div class="font-load">&nbsp;</div>
+		<div id="debug" width="500px" height="900px" style="position:absolute;">
+			<canvas id="dbc" style="display:none;"></canvas>
+		</div>
+
+		<div id="game"></div>
+
+		<script>
+			$(document).ready(function() {
+				$('#game').fruitFall();
+			});
+		</script>
+	</body>
+
+</html>
